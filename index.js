@@ -4,13 +4,19 @@ const tutorials = [
   'implementing Blockchain Web API',
   'The Test Driven Development Workflow',
   'What is NaN and how Can we Check for it',
-  'What is the difference between stopPropagation and preventDefault?',
+  'What is the difference between stop Propagation and preventDefault?',
   'Immutable State and Pure Functions',
   'what is the difference between == and ===?',
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+let words = tutorials.map(tutorial=> tutorial.split(' '));
+
+
+function titleCased(innie) {
+  let newIn = ((innie.toUpperCase(0)) + (innie.slice(1, innie.length -1).toLowerCase()))
 }
+
+console.log(words.map(word => titleCased(word)))
+
